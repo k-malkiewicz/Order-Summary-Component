@@ -1,0 +1,100 @@
+@import 'variables';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: $bg-body url('../images/pattern-background-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 -48%;
+    font-family: $font-family;
+    display: grid;
+    place-items: center;
+}
+
+.hero {
+    width: 28.125rem;
+    background: hsl(0, 0%, 100%);
+    color: $font-color-secondary;
+    text-align: center;
+    border-radius: 1.125rem;
+    overflow: hidden;
+    & > img {
+        width: 100%;
+    }
+    &_body {
+        padding: 1.875rem 3rem 3.1875rem 2.75rem;
+        h1 {
+            color: $font-color-primary;
+            margin: .625rem 0;
+            font-size: 1.75rem;
+            font-weight: 900;
+        }
+        p {
+            margin: .875rem 0 0;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.7;
+        }
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        font-size: .9688rem;
+        font-weight: 700;
+    }
+    .proceed_link {
+        background: $bg-proceed-link;
+        color: hsl(0, 0%, 100%);
+        margin: 1.875rem 0 0;
+        padding: .9375rem;
+        border-radius: .5625rem;
+        &:hover {
+            background: $color-hover;
+        }
+    }
+    .cancel_link {
+        color: $font-color-secondary;
+        margin: 2.0625rem 0 0;
+        &:hover {
+            color: $font-color-primary;
+        }
+    }
+}
+
+.actual_plan {
+    background: $bg-annual-plan;
+    margin: 1.0625rem 0 0;
+    padding: 1.625rem 1.4375rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &_info {
+        margin: 0 0 0 1.1875rem;
+        display: flex;
+        flex-direction: column;
+        gap: .375rem;
+        span:nth-child(1) {
+            font-weight: 900;
+            color: $font-color-primary;
+        }
+    }
+    .change_plan_link {
+        font-size: .875rem;
+        text-decoration: underline;
+        position: absolute;
+        top: 2.6875rem;
+        right: 1.6875rem;
+        &:hover {
+            color: $color-hover;
+        }
+    }
+}
+
+@import 'media';
