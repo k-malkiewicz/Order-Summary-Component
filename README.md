@@ -8,7 +8,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Links
 
-- Live Site URL (I use Netlify for websites hosting) ⇒ 
+- Live Site URL (I use Netlify for websites hosting) ⇒ https://order-summary-component-km9.netlify.app
 
 ## Built with
 
